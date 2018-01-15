@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C18FC8D2008E98C00FEB851 /* RageCodableExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C18FC8B2008E98C00FEB851 /* RageCodableExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C18FCB32008EC4600FEB851 /* RageCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C18FCB22008EC4600FEB851 /* RageCodable.swift */; };
+		5C18FCB62008ECBA00FEB851 /* RageRxSwiftAndCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C18FCB52008ECBA00FEB851 /* RageRxSwiftAndCodable.swift */; };
+		5C42541B2008F372002E3AAF /* RageCodableExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C18FC882008E98C00FEB851 /* RageCodableExtensions.framework */; };
+		5C4254222008F3CC002E3AAF /* RageCodableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4254212008F3CC002E3AAF /* RageCodableSpec.swift */; };
+		5C7339A1200D04520035047B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5C7339A0200D04520035047B /* .gitignore */; };
+		5CDA40992009015100BD02D9 /* RageCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C18FCB22008EC4600FEB851 /* RageCodable.swift */; };
+		5CDA409A2009015700BD02D9 /* RageRxSwiftAndCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C18FCB52008ECBA00FEB851 /* RageRxSwiftAndCodable.swift */; };
+		F9D343D630EF92D6A45A4AFA /* Pods_RageCodableExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08AF4C33253E9D09F918FB5 /* Pods_RageCodableExtensions.framework */; };
+		FC072CA426C8FBE18864EAE3 /* Pods_RageCodableExtensionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8892DC2636C86D342366E1 /* Pods_RageCodableExtensionsTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C42541C2008F372002E3AAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C18FC7F2008E98C00FEB851 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C18FC872008E98C00FEB851;
+			remoteInfo = RageCodableExtensions;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1561BCE5F7C255212329CD30 /* Pods-RageCodableExtensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RageCodableExtensions.release.xcconfig"; path = "Pods/Target Support Files/Pods-RageCodableExtensions/Pods-RageCodableExtensions.release.xcconfig"; sourceTree = "<group>"; };
+		239F34CD46D1025B84E3F27B /* Pods-RageCodableExtensionsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RageCodableExtensionsTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RageCodableExtensionsTest/Pods-RageCodableExtensionsTest.release.xcconfig"; sourceTree = "<group>"; };
+		3095B221C789607DC968AC4A /* Pods-RageCodableExtensionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RageCodableExtensionsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RageCodableExtensionsTests/Pods-RageCodableExtensionsTests.release.xcconfig"; sourceTree = "<group>"; };
+		3A8892DC2636C86D342366E1 /* Pods_RageCodableExtensionsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RageCodableExtensionsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C18FC882008E98C00FEB851 /* RageCodableExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RageCodableExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C18FC8B2008E98C00FEB851 /* RageCodableExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RageCodableExtensions.h; sourceTree = "<group>"; };
+		5C18FC8C2008E98C00FEB851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C18FCB22008EC4600FEB851 /* RageCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RageCodable.swift; sourceTree = "<group>"; };
+		5C18FCB52008ECBA00FEB851 /* RageRxSwiftAndCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RageRxSwiftAndCodable.swift; sourceTree = "<group>"; };
+		5C4254162008F372002E3AAF /* RageCodableExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RageCodableExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C42541A2008F372002E3AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C4254212008F3CC002E3AAF /* RageCodableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RageCodableSpec.swift; sourceTree = "<group>"; };
+		5C7339A0200D04520035047B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		788146801436AFE96DB6B75F /* Pods-RageCodableExtensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RageCodableExtensions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RageCodableExtensions/Pods-RageCodableExtensions.debug.xcconfig"; sourceTree = "<group>"; };
+		7D24E88AFA38469861116751 /* Pods-RageCodableExtensionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RageCodableExtensionsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RageCodableExtensionsTests/Pods-RageCodableExtensionsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		99269AE08823BC630CAAE436 /* Pods-RageCodableExtensionsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RageCodableExtensionsTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RageCodableExtensionsTest/Pods-RageCodableExtensionsTest.debug.xcconfig"; sourceTree = "<group>"; };
+		A7C0151F1C6279E36C8D833C /* Pods_RageCodableExtensionsTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RageCodableExtensionsTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D08AF4C33253E9D09F918FB5 /* Pods_RageCodableExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RageCodableExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C18FC842008E98C00FEB851 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D343D630EF92D6A45A4AFA /* Pods_RageCodableExtensions.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C4254132008F372002E3AAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C42541B2008F372002E3AAF /* RageCodableExtensions.framework in Frameworks */,
+				FC072CA426C8FBE18864EAE3 /* Pods_RageCodableExtensionsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C18FC7E2008E98C00FEB851 = {
+			isa = PBXGroup;
+			children = (
+				5C7339A0200D04520035047B /* .gitignore */,
+				5C18FC8A2008E98C00FEB851 /* RageCodableExtensions */,
+				5C4254172008F372002E3AAF /* RageCodableExtensionsTests */,
+				5C18FC892008E98C00FEB851 /* Products */,
+				D0B101F27925518C5F71674B /* Pods */,
+				D0447FFB1A7C845D38EB4A2E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5C18FC892008E98C00FEB851 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C18FC882008E98C00FEB851 /* RageCodableExtensions.framework */,
+				5C4254162008F372002E3AAF /* RageCodableExtensionsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C18FC8A2008E98C00FEB851 /* RageCodableExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				5C18FCB42008EC9100FEB851 /* RxSwiftAndCodable */,
+				5C18FCB12008EC3000FEB851 /* Codable */,
+				5C18FC8B2008E98C00FEB851 /* RageCodableExtensions.h */,
+				5C18FC8C2008E98C00FEB851 /* Info.plist */,
+			);
+			path = RageCodableExtensions;
+			sourceTree = "<group>";
+		};
+		5C18FCB12008EC3000FEB851 /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				5C18FCB22008EC4600FEB851 /* RageCodable.swift */,
+			);
+			path = Codable;
+			sourceTree = "<group>";
+		};
+		5C18FCB42008EC9100FEB851 /* RxSwiftAndCodable */ = {
+			isa = PBXGroup;
+			children = (
+				5C18FCB52008ECBA00FEB851 /* RageRxSwiftAndCodable.swift */,
+			);
+			path = RxSwiftAndCodable;
+			sourceTree = "<group>";
+		};
+		5C4254172008F372002E3AAF /* RageCodableExtensionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C42541A2008F372002E3AAF /* Info.plist */,
+				5C4254212008F3CC002E3AAF /* RageCodableSpec.swift */,
+			);
+			path = RageCodableExtensionsTests;
+			sourceTree = "<group>";
+		};
+		D0447FFB1A7C845D38EB4A2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D08AF4C33253E9D09F918FB5 /* Pods_RageCodableExtensions.framework */,
+				A7C0151F1C6279E36C8D833C /* Pods_RageCodableExtensionsTest.framework */,
+				3A8892DC2636C86D342366E1 /* Pods_RageCodableExtensionsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0B101F27925518C5F71674B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				788146801436AFE96DB6B75F /* Pods-RageCodableExtensions.debug.xcconfig */,
+				1561BCE5F7C255212329CD30 /* Pods-RageCodableExtensions.release.xcconfig */,
+				99269AE08823BC630CAAE436 /* Pods-RageCodableExtensionsTest.debug.xcconfig */,
+				239F34CD46D1025B84E3F27B /* Pods-RageCodableExtensionsTest.release.xcconfig */,
+				7D24E88AFA38469861116751 /* Pods-RageCodableExtensionsTests.debug.xcconfig */,
+				3095B221C789607DC968AC4A /* Pods-RageCodableExtensionsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5C18FC852008E98C00FEB851 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C18FC8D2008E98C00FEB851 /* RageCodableExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5C18FC872008E98C00FEB851 /* RageCodableExtensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C18FC902008E98C00FEB851 /* Build configuration list for PBXNativeTarget "RageCodableExtensions" */;
+			buildPhases = (
+				CF09A1470DE09A7B529577B8 /* [CP] Check Pods Manifest.lock */,
+				5C18FC832008E98C00FEB851 /* Sources */,
+				5C18FC842008E98C00FEB851 /* Frameworks */,
+				5C18FC852008E98C00FEB851 /* Headers */,
+				5C18FC862008E98C00FEB851 /* Resources */,
+				8633D558DA4AE2160A96FC40 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RageCodableExtensions;
+			productName = RageCodableExtensions;
+			productReference = 5C18FC882008E98C00FEB851 /* RageCodableExtensions.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5C4254152008F372002E3AAF /* RageCodableExtensionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C42541E2008F372002E3AAF /* Build configuration list for PBXNativeTarget "RageCodableExtensionsTests" */;
+			buildPhases = (
+				A223113B5B5EA64CF66ED28D /* [CP] Check Pods Manifest.lock */,
+				5C4254122008F372002E3AAF /* Sources */,
+				5C4254132008F372002E3AAF /* Frameworks */,
+				5C4254142008F372002E3AAF /* Resources */,
+				AC5AEA76A5BAA8FFB65F8B76 /* [CP] Embed Pods Frameworks */,
+				2C9AF3F877227C8CEEF006DA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C42541D2008F372002E3AAF /* PBXTargetDependency */,
+			);
+			name = RageCodableExtensionsTests;
+			productName = RageCodableExtensionsTests;
+			productReference = 5C4254162008F372002E3AAF /* RageCodableExtensionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C18FC7F2008E98C00FEB851 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Artem Cherkasov";
+				TargetAttributes = {
+					5C18FC872008E98C00FEB851 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+					5C4254152008F372002E3AAF = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 5C18FC822008E98C00FEB851 /* Build configuration list for PBXProject "RageCodableExtensions" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5C18FC7E2008E98C00FEB851;
+			productRefGroup = 5C18FC892008E98C00FEB851 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C18FC872008E98C00FEB851 /* RageCodableExtensions */,
+				5C4254152008F372002E3AAF /* RageCodableExtensionsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C18FC862008E98C00FEB851 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C7339A1200D04520035047B /* .gitignore in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C4254142008F372002E3AAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C9AF3F877227C8CEEF006DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RageCodableExtensionsTests/Pods-RageCodableExtensionsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8633D558DA4AE2160A96FC40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RageCodableExtensions/Pods-RageCodableExtensions-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A223113B5B5EA64CF66ED28D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RageCodableExtensionsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC5AEA76A5BAA8FFB65F8B76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RageCodableExtensionsTests/Pods-RageCodableExtensionsTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Rage/Rage.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RageCodableExtensionsTests/Pods-RageCodableExtensionsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF09A1470DE09A7B529577B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RageCodableExtensions-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C18FC832008E98C00FEB851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C18FCB32008EC4600FEB851 /* RageCodable.swift in Sources */,
+				5C18FCB62008ECBA00FEB851 /* RageRxSwiftAndCodable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C4254122008F372002E3AAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CDA409A2009015700BD02D9 /* RageRxSwiftAndCodable.swift in Sources */,
+				5CDA40992009015100BD02D9 /* RageCodable.swift in Sources */,
+				5C4254222008F3CC002E3AAF /* RageCodableSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C42541D2008F372002E3AAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C18FC872008E98C00FEB851 /* RageCodableExtensions */;
+			targetProxy = 5C42541C2008F372002E3AAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5C18FC8E2008E98C00FEB851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5C18FC8F2008E98C00FEB851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5C18FC912008E98C00FEB851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 788146801436AFE96DB6B75F /* Pods-RageCodableExtensions.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CF454493UR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RageCodableExtensions/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.gspd.RageCodableExtensions;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C18FC922008E98C00FEB851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1561BCE5F7C255212329CD30 /* Pods-RageCodableExtensions.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CF454493UR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RageCodableExtensions/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.gspd.RageCodableExtensions;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5C42541F2008F372002E3AAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D24E88AFA38469861116751 /* Pods-RageCodableExtensionsTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = RageCodableExtensionsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.gspd.RageCodableExtensionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C4254202008F372002E3AAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3095B221C789607DC968AC4A /* Pods-RageCodableExtensionsTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = RageCodableExtensionsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.gspd.RageCodableExtensionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C18FC822008E98C00FEB851 /* Build configuration list for PBXProject "RageCodableExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C18FC8E2008E98C00FEB851 /* Debug */,
+				5C18FC8F2008E98C00FEB851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C18FC902008E98C00FEB851 /* Build configuration list for PBXNativeTarget "RageCodableExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C18FC912008E98C00FEB851 /* Debug */,
+				5C18FC922008E98C00FEB851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C42541E2008F372002E3AAF /* Build configuration list for PBXNativeTarget "RageCodableExtensionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C42541F2008F372002E3AAF /* Debug */,
+				5C4254202008F372002E3AAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C18FC7F2008E98C00FEB851 /* Project object */;
+}
