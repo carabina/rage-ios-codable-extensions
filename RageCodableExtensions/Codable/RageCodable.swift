@@ -1,5 +1,5 @@
-import Rage
 import Foundation
+import Rage
 import Result
 
 extension Encodable {
@@ -75,7 +75,9 @@ extension BodyRageRequest {
 }
 
 extension RageRequest {
-    public func stub<T: Codable>(_ value: T, mode: StubMode = .immediate, encoder: JSONEncoder = JSONEncoder()) -> RageRequest {
+    public func stub<T: Codable>(_ value: T,
+                                 mode: StubMode = .immediate,
+                                 encoder: JSONEncoder = JSONEncoder()) -> RageRequest {
         guard let optionalString = try? value.toJSONString(encoder: encoder),
             let json = optionalString else {
                 return self
@@ -84,7 +86,9 @@ extension RageRequest {
         return self.stub(json, mode: mode)
     }
 
-    public func stub<T: Codable>(_ value: [T], mode: StubMode = .immediate, encoder: JSONEncoder = JSONEncoder()) -> RageRequest {
+    public func stub<T: Codable>(_ value: [T],
+                                 mode: StubMode = .immediate,
+                                 encoder: JSONEncoder = JSONEncoder()) -> RageRequest {
         guard let optionalString = try? value.toJSONString(encoder: encoder),
             let json = optionalString else {
                 return self

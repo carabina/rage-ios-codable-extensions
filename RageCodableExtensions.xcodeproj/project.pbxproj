@@ -13,6 +13,11 @@
 		5C42541B2008F372002E3AAF /* RageCodableExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C18FC882008E98C00FEB851 /* RageCodableExtensions.framework */; };
 		5C4254222008F3CC002E3AAF /* RageCodableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4254212008F3CC002E3AAF /* RageCodableSpec.swift */; };
 		5C7339A1200D04520035047B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5C7339A0200D04520035047B /* .gitignore */; };
+		5C7339A4200D09B90035047B /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5C7339A3200D09B90035047B /* License.txt */; };
+		5C7339A6200D0A2B0035047B /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5C7339A5200D0A2B0035047B /* .swiftlint.yml */; };
+		5C7339A9200D0C440035047B /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5C7339A8200D0C440035047B /* .swiftlint.yml */; };
+		5C7339AB200D0D120035047B /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5C7339AA200D0D120035047B /* .travis.yml */; };
+		5C7339AD200D0D800035047B /* RageCodableExtensions.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5C7339AC200D0D800035047B /* RageCodableExtensions.podspec */; };
 		5CDA40992009015100BD02D9 /* RageCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C18FCB22008EC4600FEB851 /* RageCodable.swift */; };
 		5CDA409A2009015700BD02D9 /* RageRxSwiftAndCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C18FCB52008ECBA00FEB851 /* RageRxSwiftAndCodable.swift */; };
 		F9D343D630EF92D6A45A4AFA /* Pods_RageCodableExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08AF4C33253E9D09F918FB5 /* Pods_RageCodableExtensions.framework */; };
@@ -43,6 +48,12 @@
 		5C42541A2008F372002E3AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C4254212008F3CC002E3AAF /* RageCodableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RageCodableSpec.swift; sourceTree = "<group>"; };
 		5C7339A0200D04520035047B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		5C7339A2200D091A0035047B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5C7339A3200D09B90035047B /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		5C7339A5200D0A2B0035047B /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		5C7339A8200D0C440035047B /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		5C7339AA200D0D120035047B /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		5C7339AC200D0D800035047B /* RageCodableExtensions.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = RageCodableExtensions.podspec; sourceTree = "<group>"; };
 		788146801436AFE96DB6B75F /* Pods-RageCodableExtensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RageCodableExtensions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RageCodableExtensions/Pods-RageCodableExtensions.debug.xcconfig"; sourceTree = "<group>"; };
 		7D24E88AFA38469861116751 /* Pods-RageCodableExtensionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RageCodableExtensionsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RageCodableExtensionsTests/Pods-RageCodableExtensionsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		99269AE08823BC630CAAE436 /* Pods-RageCodableExtensionsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RageCodableExtensionsTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RageCodableExtensionsTest/Pods-RageCodableExtensionsTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +85,11 @@
 		5C18FC7E2008E98C00FEB851 = {
 			isa = PBXGroup;
 			children = (
+				5C7339AC200D0D800035047B /* RageCodableExtensions.podspec */,
+				5C7339AA200D0D120035047B /* .travis.yml */,
+				5C7339A5200D0A2B0035047B /* .swiftlint.yml */,
+				5C7339A3200D09B90035047B /* License.txt */,
+				5C7339A2200D091A0035047B /* README.md */,
 				5C7339A0200D04520035047B /* .gitignore */,
 				5C18FC8A2008E98C00FEB851 /* RageCodableExtensions */,
 				5C4254172008F372002E3AAF /* RageCodableExtensionsTests */,
@@ -95,7 +111,7 @@
 		5C18FC8A2008E98C00FEB851 /* RageCodableExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				5C18FCB42008EC9100FEB851 /* RxSwiftAndCodable */,
+				5C18FCB42008EC9100FEB851 /* RxSwift */,
 				5C18FCB12008EC3000FEB851 /* Codable */,
 				5C18FC8B2008E98C00FEB851 /* RageCodableExtensions.h */,
 				5C18FC8C2008E98C00FEB851 /* Info.plist */,
@@ -111,12 +127,12 @@
 			path = Codable;
 			sourceTree = "<group>";
 		};
-		5C18FCB42008EC9100FEB851 /* RxSwiftAndCodable */ = {
+		5C18FCB42008EC9100FEB851 /* RxSwift */ = {
 			isa = PBXGroup;
 			children = (
 				5C18FCB52008ECBA00FEB851 /* RageRxSwiftAndCodable.swift */,
 			);
-			path = RxSwiftAndCodable;
+			path = RxSwift;
 			sourceTree = "<group>";
 		};
 		5C4254172008F372002E3AAF /* RageCodableExtensionsTests */ = {
@@ -124,6 +140,7 @@
 			children = (
 				5C42541A2008F372002E3AAF /* Info.plist */,
 				5C4254212008F3CC002E3AAF /* RageCodableSpec.swift */,
+				5C7339A8200D0C440035047B /* .swiftlint.yml */,
 			);
 			path = RageCodableExtensionsTests;
 			sourceTree = "<group>";
@@ -170,6 +187,7 @@
 			buildConfigurationList = 5C18FC902008E98C00FEB851 /* Build configuration list for PBXNativeTarget "RageCodableExtensions" */;
 			buildPhases = (
 				CF09A1470DE09A7B529577B8 /* [CP] Check Pods Manifest.lock */,
+				5C7339A7200D0A820035047B /* SwiftLint */,
 				5C18FC832008E98C00FEB851 /* Sources */,
 				5C18FC842008E98C00FEB851 /* Frameworks */,
 				5C18FC852008E98C00FEB851 /* Headers */,
@@ -251,6 +269,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C7339A6200D0A2B0035047B /* .swiftlint.yml in Resources */,
+				5C7339A4200D09B90035047B /* License.txt in Resources */,
 				5C7339A1200D04520035047B /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +279,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C7339AB200D0D120035047B /* .travis.yml in Resources */,
+				5C7339A9200D0C440035047B /* .swiftlint.yml in Resources */,
+				5C7339AD200D0D800035047B /* RageCodableExtensions.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +302,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RageCodableExtensionsTests/Pods-RageCodableExtensionsTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		5C7339A7200D0A820035047B /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		8633D558DA4AE2160A96FC40 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -2,7 +2,6 @@ import Foundation
 import Quick
 import Nimble
 import Rage
-import RxSwift
 
 class Person: Codable {
     let firstName: String?
