@@ -1,9 +1,9 @@
 PODS:
   - Nimble (7.0.3)
   - Quick (1.2.0)
-  - Rage/Core (0.12.4):
+  - Rage/Core (0.13.0):
     - Result (~> 3.2.4)
-  - Rage/RxSwift (0.12.4):
+  - Rage/RxSwift (0.13.0):
     - Rage/Core
     - RxSwift (~> 4.1.1)
   - Result (3.2.4)
@@ -12,15 +12,15 @@ PODS:
 DEPENDENCIES:
   - Nimble (~> 7.0.3)
   - Quick (~> 1.2.0)
-  - Rage/RxSwift (~> 0.12.0)
+  - Rage/RxSwift (~> 0.13.0)
 
 SPEC CHECKSUMS:
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  Rage: 479cc2230810168588d2740c0dd9a533fb9439d4
+  Rage: c47f899e012d6651c8b61a0b561a572df47ef0cb
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RxSwift: c6e3b1c7b325c7d121cd4327e9d98b7ed746b570
 
-PODFILE CHECKSUM: 76d97f990374b61675dbf79a234053b27d88db69
+PODFILE CHECKSUM: 52fca5e3ea30f642af34a87ef2609a44aed60070
 
 COCOAPODS: 1.4.0.beta.2

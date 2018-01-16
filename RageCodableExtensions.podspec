@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = "RageCodableExtensions"
-    s.summary          = "dfdsf"
+    s.summary          = "JSON serialization extensions for Rage"
     s.version          = "0.1.0"
     s.homepage         = "https://github.com/gspd-mobi/rage-ios-codable-extensions"
     s.license          = "MIT"
@@ -15,12 +15,12 @@ Pod::Spec.new do |s|
     s.subspec "Core" do |ss|
         ss.source_files = "RageCodableExtensions/Codable/*.swift"
         ss.framework = "Foundation"
-        ss.dependency "Rage", "~> 0.12.4"
+        ss.dependency "Rage", "~> 0.13.0"
     end
 
     s.subspec "RxSwift" do |ss|
         ss.source_files = "RageCodableExtensions/RxSwift/*.swift"
         ss.dependency "RageCodableExtensions/Core"
-        ss.dependency "Rage/RxSwift", "~> 0.12.4"
+        ss.dependency "Rage/RxSwift", "~> 0.13.0"
     end
 end

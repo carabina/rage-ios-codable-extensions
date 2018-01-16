@@ -210,7 +210,7 @@ class RageCodableSpec: QuickSpec {
             it("codable at BodyRageRequest body json") {
                 let person = Person(firstName: "Jennifer", lastName: "Jenkins")
                 let personString = try! person.toJSONString()
-                let request = RageRequest(httpMethod: .post, baseUrl: "http://example.com", session: URLSession.shared)
+                let request = RageRequest(httpMethod: .post, baseUrl: "http://example.com")
                 let bodyRageRequest = BodyRageRequest(from: request)
                 _ = bodyRageRequest.bodyJson(person)
                 let body = bodyRageRequest.rawRequest().httpBody!
@@ -225,7 +225,7 @@ class RageCodableSpec: QuickSpec {
                     Person(firstName: "Matilda", lastName: "Hunta")
                 ]
                 let personsString = try! persons.toJSONString()
-                let request = RageRequest(httpMethod: .post, baseUrl: "http://example.com", session: URLSession.shared)
+                let request = RageRequest(httpMethod: .post, baseUrl: "http://example.com")
                 let bodyRageRequest = BodyRageRequest(from: request)
                 _ = bodyRageRequest.bodyJson(persons)
                 let body = bodyRageRequest.rawRequest().httpBody!
@@ -239,7 +239,7 @@ class RageCodableSpec: QuickSpec {
             it("rage request codable stub") {
                 let person = Person(firstName: "Kate", lastName: "Robinson")
                 let personString = try! person.toJSONString()
-                let request = RageRequest(httpMethod: .get, baseUrl: "http://example.com", session: URLSession.shared)
+                let request = RageRequest(httpMethod: .get, baseUrl: "http://example.com")
                 _ = request.stub(person, mode: .immediate)
                 let result  = request.execute().value?.data
                 let resultString = String(data: result!, encoding: .utf8)!
@@ -253,7 +253,7 @@ class RageCodableSpec: QuickSpec {
                     Person(firstName: "John", lastName: "Harris")
                 ]
                 let personsString = try! persons.toJSONString()
-                let request = RageRequest(httpMethod: .get, baseUrl: "http://example.com", session: URLSession.shared)
+                let request = RageRequest(httpMethod: .get, baseUrl: "http://example.com")
                 _ = request.stub(persons, mode: .immediate)
                 let result = request.execute().value?.data
                 let resultString = String(data: result!, encoding: .utf8)!

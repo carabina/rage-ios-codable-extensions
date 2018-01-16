@@ -20,7 +20,7 @@ extension RageRequest {
         }
     }
 
-    public func executeObjectObservable<T: Codable>(decoder: JSONDecoder = JSONDecoder()) -> Observable<[T]> {
+    public func executeArrayObservable<T: Codable>(decoder: JSONDecoder = JSONDecoder()) -> Observable<[T]> {
         return taskObservable()
             .flatMap { result -> Observable<[T]> in
                 switch result {
