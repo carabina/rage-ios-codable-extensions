@@ -1,7 +1,7 @@
 use_frameworks!
 
 def common_pods
-  pod 'Rage/RxSwift', "~> 0.13.0"
+  pod 'Rage/RxSwift', '~> 0.14.0'
 end
 
 target 'RageCodableExtensions' do

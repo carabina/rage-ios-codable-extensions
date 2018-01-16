@@ -129,9 +129,10 @@ extension RageRequest {
         }
     }
 
-    open func enqueueObject<T: Codable>(_ completion: @escaping (Result<T, RageError>) -> Void) {
+    open func enqueueObject<T: Codable>(decoder: JSONDecoder = JSONDecoder(),
+                                        _ completion: @escaping (Result<T, RageError>) -> Void) {
         DispatchQueue.global(qos: .background).async(execute: {
-            let result: Result<T, RageError> = self.executeObject()
+            let result: Result<T, RageError> = self.executeObject(decoder: decoder)
 
             DispatchQueue.main.async(execute: {
                 completion(result)
@@ -139,9 +140,10 @@ extension RageRequest {
         })
     }
 
-    open func enqueueArray<T: Codable>(_ completion: @escaping (Result<[T], RageError>) -> Void) {
+    open func enqueueArray<T: Codable>(decoder: JSONDecoder = JSONDecoder(),
+                                       _ completion: @escaping (Result<[T], RageError>) -> Void) {
         DispatchQueue.global(qos: .background).async(execute: {
-            let result: Result<[T], RageError> = self.executeArray()
+            let result: Result<[T], RageError> = self.executeArray(decoder: decoder)
 
             DispatchQueue.main.async(execute: {
                 completion(result)
